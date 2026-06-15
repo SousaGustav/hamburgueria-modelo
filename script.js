@@ -22,7 +22,7 @@ const menuData = {
       name: 'Veggie Especial',
       description: 'Hambúrguer de grão de bico e quinoa, queijo brie, rúcula e geleia de pimenta.',
       price: 31.90,
-      image: 'https://images.unsplash.com/photo-1525059696034-4967a729002e?q=80&w=600&auto=format&fit=crop'
+      image: 'https://6a2f807cd2c53535166bdd78.imgix.net/Burger-Veggie-Especial-387634.jpeg'
     },
     {
       id: 'b4',
