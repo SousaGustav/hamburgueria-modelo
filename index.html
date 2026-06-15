@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burger & Co. | Hamburgueria Artesanal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">Burger<span>&Co.</span></a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link">Início</a></li>
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Abrir carrinho">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__tag">100% Artesanal • Feito na Brasa</span>
+        <h1 class="hero__title">Sabor que <span>conquista</span> a cada mordida.</h1>
+        <p class="hero__subtitle">Ingredientes selecionados, pão brioche fresco e carnes grelhadas no ponto certo. Bem-vindo à melhor experiência burger da cidade.</p>
+        <a href="#menu" class="btn btn--primary">Ver Cardápio</a>
+      </div>
+      <div class="hero__image">
+        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000&auto=format&fit=crop" alt="Hambúrguer artesanal suculento da Burger & Co." loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nosso <span>Cardápio</span></h2>
+        <p>Cada item preparado com cuidado e ingredientes frescos selecionados diariamente.</p>
+      </div>
+
+      <!-- HAMBURGUERES -->
+      <div class="menu__category">
+        <h3 class="menu__category-title">🍔 Hambúrgueres</h3>
+        <div class="menu__grid" id="grid-burgers"></div>
+      </div>
+
+      <!-- ACOMPANHAMENTOS -->
+      <div class="menu__category">
+        <h3 class="menu__category-title">🍟 Acompanhamentos</h3>
+        <div class="menu__grid" id="grid-sides"></div>
+      </div>
+
+      <!-- BEBIDAS -->
+      <div class="menu__category">
+        <h3 class="menu__category-title">🥤 Bebidas</h3>
+        <div class="menu__grid" id="grid-drinks"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="container about__inner">
+      <div class="about__image">
+        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?q=80&w=900&auto=format&fit=crop" alt="Interior aconchegante da hamburgueria Burger & Co." loading="lazy">
+      </div>
+      <div class="about__content">
+        <div class="section-title section-title--left">
+          <h2>Sobre a <span>Burger & Co.</span></h2>
+        </div>
+        <p>Desde o primeiro dia, nosso compromisso é simples: usar ingredientes frescos, carnes de procedência selecionada e pães artesanais assados diariamente. Cada burger é montado na hora, com carinho e atenção aos detalhes, para entregar uma experiência de sabor única em cada visita.</p>
+
+        <div class="about__info">
+          <div class="info-card">
+            <h4>⏰ Horário de Funcionamento</h4>
+            <p>Terça a Domingo<br>18h às 23h</p>
+          </div>
+          <div class="info-card">
+            <h4>📍 Endereço</h4>
+            <p>Rua das Brasas, 245<br>Aldeota, Fortaleza - CE</p>
+          </div>
+        </div>
+
+        <div class="social-icons" id="contato">
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Burger & Co. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- CART MODAL -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-modal" id="cartModal">
+  <div class="cart-modal__header">
+    <h3>Seu Carrinho</h3>
+    <button class="cart-close" id="cartClose" aria-label="Fechar carrinho">&times;</button>
+  </div>
+
+  <div class="cart-modal__body" id="cartBody">
+    <p class="cart-empty" id="cartEmptyMsg">Seu carrinho está vazio.</p>
+  </div>
+
+  <div class="cart-modal__footer">
+    <div class="cart-total">
+      <span>Total</span>
+      <strong id="cartTotal">R$ 0,00</strong>
+    </div>
+
+    <div class="cart-form">
+      <div class="cart-form">
+  <label for="customerName">Nome completo</label>
+  <input type="text" id="customerName" placeholder="Seu nome">
+
+  <label for="customerAddress">Endereço de entrega</label>
+  <input type="text" id="customerAddress" placeholder="Rua, número, bairro">
+
+  <label for="paymentMethod">Forma de pagamento</label>
+  <select id="paymentMethod">
+    <option value="">Selecione...</option>
+    <option value="Dinheiro">Dinheiro</option>
+    <option value="Cartão de Crédito">Cartão de Crédito</option>
+    <option value="Cartão de Débito">Cartão de Débito</option>
+    <option value="Pix">Pix</option>
+  </select>
+
+  <div class="change-field" id="changeField">
+    <label for="changeFor">Troco para quanto?</label>
+    <input type="text" id="changeFor" placeholder="Ex: R$ 50,00">
+  </div>
+</div>
+    </div>
+
+    <button class="btn btn--whatsapp" id="checkoutBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.74.46 3.42 1.32 4.9L2 22l5.32-1.39a9.9 9.9 0 0 0 4.72 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.13-2.9-7.01A9.85 9.85 0 0 0 12.04 2zm5.81 14.06c-.25.7-1.45 1.34-2 1.42-.51.08-1.16.11-1.87-.12-.43-.13-.99-.32-1.7-.62-3-1.29-4.96-4.31-5.11-4.51-.15-.2-1.22-1.62-1.22-3.09 0-1.47.77-2.19 1.05-2.49.27-.3.6-.37.8-.37.2 0 .4 0 .57.01.18.01.43-.07.67.51.25.6.85 2.07.92 2.22.07.15.12.33.02.53-.1.2-.15.32-.3.49-.15.17-.32.38-.45.51-.15.15-.31.31-.13.61.18.3.81 1.34 1.74 2.17 1.2 1.07 2.21 1.4 2.52 1.55.31.15.49.13.67-.05.18-.18.78-.91.99-1.22.2-.31.41-.26.69-.16.28.1 1.76.83 2.06.98.3.15.5.23.57.36.07.13.07.75-.18 1.45z"/></svg>
+      Finalizar Pedido via WhatsApp
+    </button>
+  </div>
+</aside>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
